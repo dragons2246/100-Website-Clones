@@ -4,65 +4,60 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Google</title>
+    <title>Google Clone</title>
     <link rel="stylesheet" href="./style.css">
     <!-- <link rel="icon" href="./icon.ico"> -->
   </head>
 
   <body class="dark-mode">
-    <header class="navbar">
-        <nav class="navbar-left">
-            <ul class="navbar-links">
-                <li><a>About</a></li>
-                <li><a>Store</a></li>
-            </ul>
-        </nav>
-        <nav class="navbar-right">
-            <ul class="navbar-links">
-                <li><a>Gmail</a></li>
-                <li><a>Images</a></li>
-                <li><a></a></li>
-                <li><a><img src="./design/profilepic.jpg" class="circle"/></a></li>
-            </ul>
-        </nav>
-    </header>
-    
-    <main class="flex-container center">
-        <section class="center mt-90">
-            <a style="margin-left: 40px"><img src="./design/kitty.png"/></a>
 
-            <form class="flex-container center">
-                <label for="search"></label>
-                <input class="searchbar" type="text" name="search" id="search" />
-            </form>
+        <header class="header">
+            <a>About</a>
+            <a>Store</a>
+            <nav class="navbar-right">
+                <a>Gmail</a>
+                <a>Images</a>
+                <a><img class="circle" src="./design/profilepic.jpg" /></a>
+            </nav>
+        </header>
 
-            <div class="flex-container center mt-20">
-                <div class="button">Google Search</div>
-                <div class="button">I'm Feeling Lucky</div>
-            </div>
+        <section class="flex-row splash">
+            <figure>
+                <img src="./design/google.png" alt="Google splash screen"/>
+            </figure>
         </section>
-    </main>
 
-    <footer class="footer">
-        <div class="flex-container">
-            <ul>
-                <li><a>Advertising</a></li>
-                <li><a>Business</a></li>
-                <li><a>How Search works</a></li>
-            </ul>
-        </div>
-        <div class="flex-container">
-            <ul class="navbar-links">
-                <li><a>Carbon neutral since 2007</a></li>
-            </ul>
-        </div>
-        <div class="flex-container">
-            <ul class="navbar-links">     
-                <li><a>Privacy</a></li>
-                <li><a>Terms</a></li>
-                <li><a>Settings</a></li>
-            </ul>
-        </div>
-    </footer>
+        <section class="flex-column search center">
+            <form class="flex-column center">
+                <label for="search"></label>
+                <input class="searchbar" type="text" name="search" id="search"/>
+
+                <div class="flex-row center buttons">
+                    <input class="button" type="submit" name="search" id="search" value="Google Search">
+                    <input class="button" type="submit" name="search" id="search" value="I'm Feeling Lucky">
+                </div>
+            </form>
+        </section>
+
+        <section class="space">
+        </section>
+
+        <footer class="footer">
+            <div>
+                <a>Advertising</a>
+                <a>Business</a>
+                <a>How Search works</a>
+            </div>
+            <div>
+                <a>Carbon neutral since 2007</a>
+            </div>
+            <div>
+                <a>Privacy</a>
+                <a>Terms</a>
+                <a>Settings</a>
+            </div>
+        </footer>
+        
+
   </body>
 </html>
